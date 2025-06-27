@@ -8,4 +8,6 @@ Related workflows:
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | (TODO: add .deb package for SITL)                                                                                                                                                               |
 | (TODO: auto-sync workflow)                                                                                                                                                                      |
+Copied from `CONTRIBUTING.md`:
 
+*Do not* commit changes directly to this repository that change the message definitions. All the message definitions are directly generated from the [uORB msg definitions](https://github.com/PX4/Firmware/tree/master/msg) on the [PX4 Firmware repository](https://github.com/PX4/Firmware).

@@ -3,8 +3,10 @@
 <package format="3">
   <name>px4_msgs</name>
   <version>2.0.1</version>
-  <description>Package with the ROS-equivalent of PX4 uORB msgs</description>
-  <maintainer email="nuno.marques@dronesolutions.io">Nuno Marques</maintainer>
+  <description>Package with the ROS-equivalent of PX4 uORB msgs for EOLab Drone Catalog</description>
+  <maintainer email="pierromarie4@gmail.com">Njomeny Pierro</maintainer>
+  <maintainer email="contact@harleylara.com">Harley Lara</maintainer>
+  <maintainer email="nuno.marques@dronesolutions.io">Nuno Marques (Original maintainer)</maintainer>
   <author email="nuno.marques@dronesolutions.io">Nuno Marques</author>
   <license>BSD 3-Clause</license>
 

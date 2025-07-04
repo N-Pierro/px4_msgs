@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/eolab-hsrw/easy-px4:ubuntu-22.04
+    permissions:
+      contents: write 
     strategy:
       fail-fast: false
       matrix:

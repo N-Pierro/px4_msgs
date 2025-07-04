@@ -1,0 +1,23 @@
+name: Get Messages
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  fetch-messages:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/eolab-hsrw/easy-px4:ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        drone: ['drone1', 'drone2']
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: check drone branch
+        run: |
+          echo "${{ matrix.drone }}"
+
+

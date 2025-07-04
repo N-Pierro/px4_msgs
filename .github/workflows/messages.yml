@@ -22,6 +22,8 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]"
           git config --global user.name "GitHub Actions Bot"
+      - name: Mark repo as safe
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: install tool eolab-drones
         run: |
          pip install git+https://github.com/EOLab-HSRW/drones-fw.git@main#egg=eolab_drones

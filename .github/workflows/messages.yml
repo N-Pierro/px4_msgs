@@ -15,7 +15,7 @@ jobs:
         drone: ['protofyer', 'condor']
     steps:
       - name: checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Configure Git committer
         run: |
           git config --global user.email "github-actions[bot]"

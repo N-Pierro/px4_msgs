@@ -16,8 +16,12 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: directory ls
+        run: ls
       - name: check drone branch
         run: |
           echo "${{ matrix.drone }}"
-
+      - name: install tool eolab-drones
+        run: |
+         pip install git+https://github.com/EOLab-HSRW/drones-fw.git@main#egg=eolab_drones
 
